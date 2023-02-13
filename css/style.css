@@ -22,7 +22,13 @@ body {
     color: #F2E205;
 }
 
-h1, h2, h3, h4, h5, a, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p {
     font-weight: normal;
     margin: 0px;
     line-height: 1;
@@ -44,7 +50,7 @@ h2 {
     width: 100%;
     height: 100%;
     display: flex;
-    /* display: none; */
+    display: none;
     flex-direction: column;
 }
 
@@ -107,7 +113,24 @@ nav span {
     border-radius: 14px;
 }
 
+#discover .copyright {
+    margin-top: 43px;
+}
+
+#discover .icon {
+    width: 28px;
+    margin-bottom: -4px;
+}
+
+#discover p {
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: -0.0150em;
+}
+
+
 @media (min-width: 768.02px) {
+
     /* Global */
     body {
         margin: 0px 10%;
@@ -124,6 +147,7 @@ nav span {
         flex-direction: row;
         gap: 20px;
     }
+
     .grid-column {
         width: 100%;
     }
@@ -167,9 +191,23 @@ nav span {
         flex-direction: row;
         margin-top: 34px;
     }
-    
+
     #discover .picture {
         width: calc(50% - 10px);
     }
-}
 
+    #discover .copyright {
+        margin-top: 48px;
+    }
+
+    #discover .icon {
+        width: 42px;
+        margin-bottom: -6px;
+    }
+
+    #discover p {
+        font-size: 42px;
+        line-height: 56px;
+        letter-spacing: -0.0225em;
+    }
+}
