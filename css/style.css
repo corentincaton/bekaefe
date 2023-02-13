@@ -29,10 +29,10 @@ h1, h2, h3, h4, h5, a, p {
 }
 
 h2 {
-    font-size: 63px;
+    font-size: 56px;
     text-transform: uppercase;
     line-height: 56px;
-    letter-spacing: -0.03375em;
+    letter-spacing: -0.03em;
 
 }
 
@@ -80,8 +80,8 @@ h1 {
 
 nav {
     display: flex;
-    justify-content: end;
-    column-gap: 10px;
+    justify-content: flex-end;
+    column-gap: 15px;
 }
 
 nav span {
@@ -92,7 +92,19 @@ nav span {
 
 /* Discover */
 #discover {
-    margin-top: 89px;
+    margin-top: 93px;
+}
+
+#discover .pictures {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 44px;
+}
+
+#discover .picture {
+    width: 100%;
+    border-radius: 14px;
 }
 
 @media (min-width: 768.02px) {
@@ -138,7 +150,7 @@ nav span {
     }
 
     nav {
-        column-gap: 13.33px;
+        column-gap: 20px;
     }
 
     nav span {
@@ -149,6 +161,15 @@ nav span {
     /* Discover */
     #discover {
         margin-top: 212px;
+    }
+
+    #discover .pictures {
+        flex-direction: row;
+        margin-top: 34px;
+    }
+    
+    #discover .picture {
+        width: calc(50% - 10px);
     }
 }
 
