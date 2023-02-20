@@ -101,11 +101,14 @@ nav span {
     display: flex;
     font-size: 21px;
     letter-spacing: -0.01125em;
+    cursor: pointer;
 }
+
 
 /* Discover */
 #discover {
-    margin-top: 93px;
+    padding-top: 20px;
+    margin-top: 73px;
 }
 
 #discover .pictures {
@@ -138,7 +141,8 @@ nav span {
 
 /* Products */
 #products {
-    margin-top: 153px;
+    padding-top: 20px;
+    margin-top: 133px;
 }
 
 
@@ -219,19 +223,21 @@ nav span {
 #products .cta {
     display: inline-block;
     text-align: center;
+    cursor: pointer;
     margin-top: 44px;
     padding: 8px 21px 7px;
     font-size: 21px;
     line-height: 28px;
     letter-spacing: -0.01125em;
     text-transform: uppercase;
-    border: 2px solid #F2E205;
+    border: 2px solid #403C01;
     border-radius: 28px;
 }
 
 
 #contact {
-    margin-top: 152px;
+    padding-top: 20px;
+    margin-top: 132px;
     margin-bottom: 104px;
 
 }
@@ -312,7 +318,8 @@ nav span {
 
     /* Discover */
     #discover {
-        margin-top: 212px;
+        padding-top: 40px;
+        margin-top: 172px;
     }
 
     #discover .pictures {
@@ -340,7 +347,8 @@ nav span {
     }
 
     #products {
-        margin-top: 232px;
+        padding-top: 40px;
+        margin-top: 192px;
     }
 
     #products .split-columns:first-of-type {
@@ -367,7 +375,8 @@ nav span {
     }
 
     #contact {
-        margin-top: 220px;
+        padding-top: 40px;
+        margin-top: 180px;
     }
 
     #contact a {
@@ -382,3 +391,19 @@ nav span {
     }
 
 }
+
+@media (hover: hover) {
+
+    nav span:hover {
+      color: #F2E205;
+    }
+    #products .cta:hover {  
+        border-color: #F2E205;
+    }
+    #products .circle-wrapper:hover {
+        border-color: #403C01;
+    }
+    #contact a:hover {
+        color: #F2E205;
+    }
+  }
