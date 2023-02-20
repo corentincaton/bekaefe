@@ -57,7 +57,7 @@ h3 {
     left: 0px;
     width: 100%;
     height: 100%;
-    display: flex;
+    /* display: flex; */
     display: none;
     flex-direction: column;
 }
@@ -86,6 +86,10 @@ header img {
     margin-top: -4px;
 }
 
+header nav {
+    justify-content: flex-end;
+}
+
 h1 {
     font-size: 21px;
     flex-grow: 1;
@@ -94,7 +98,6 @@ h1 {
 
 nav {
     display: flex;
-    justify-content: flex-end;
     column-gap: 15px;
 }
 
@@ -138,6 +141,60 @@ nav span {
     font-size: 28px;
     line-height: 42px;
     letter-spacing: -0.0150em;
+}
+
+@-webkit-keyframes rotating {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+    0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    50% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+    100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 8s cubic-bezier(.65, 0, .35, 1) infinite;
+    -moz-animation: rotating 8s cubic-bezier(.65, 0, .35, 1) infinite;
+    -ms-animation: rotating 8s cubic-bezier(.65, 0, .35, 1) infinite;
+    -o-animation: rotating 8s cubic-bezier(.65, 0, .35, 1) infinite;
+    animation: rotating 8s cubic-bezier(.65, 0, .35, 1) infinite;
 }
 
 /* Products */
@@ -231,15 +288,17 @@ nav span {
     line-height: 28px;
     letter-spacing: -0.01125em;
     text-transform: uppercase;
-    border: 2px solid #403C01;
+    border: 2px solid;
     border-radius: 28px;
+    border-color: #403C01;
 }
 
 
+/* Contact */
 #contact {
     padding-top: 20px;
     margin-top: 132px;
-    margin-bottom: 104px;
+    margin-bottom: 102px;
 
 }
 
@@ -250,11 +309,16 @@ nav span {
     letter-spacing: -0.01125em;
     text-decoration: none;
     color: white;
-    margin-top: 22px;
+    margin-top: 23px;
 }
 
 .blinking {
     animation: blinker 1s linear infinite;
+}
+
+footer {
+    border-top: 2px solid #403C01;
+    padding: 39px 0px 51px;
 }
 
 @keyframes blinker {
@@ -348,6 +412,7 @@ nav span {
         letter-spacing: -0.0225em;
     }
 
+    /* Products */
     #products {
         padding-top: 40px;
         margin-top: 192px;
@@ -392,20 +457,27 @@ nav span {
         margin-top: -45px;
     }
 
+    footer {
+        padding: 34px 0px 48px
+    }
+
 }
 
 @media (hover: hover) {
 
     nav span:hover {
-      color: #F2E205;
+        color: #F2E205;
     }
-    #products .cta:hover {  
+
+    #products .cta:hover {
         border-color: #F2E205;
     }
+
     #products .circle-wrapper:hover {
         border-color: #403C01;
     }
+
     #contact a:hover {
         color: #F2E205;
     }
-  }
+}
