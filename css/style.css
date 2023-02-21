@@ -272,10 +272,14 @@ nav span {
     font-size: 10.5px;
     line-height: 10.5px;
     letter-spacing: -0.005625em;
+    width: 50px;
+    white-space: nowrap;
 }
 
 #products .color.selected .label {
-    display: block;
+    display: flex;
+    justify-content: center;
+
 }
 
 #products .cta {
@@ -291,6 +295,7 @@ nav span {
     border: 2px solid;
     border-radius: 28px;
     border-color: #403C01;
+    margin-right: 5px;
 }
 
 
