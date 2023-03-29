@@ -19,9 +19,19 @@ body {
     position: relative;
 }
 
-.yellow {
+.emphasis {
     color: #F2E205;
 }
+
+.yellow-theme {
+    background-color: #F2E205;
+    color: #0D0D0D;
+}
+
+.yellow-theme .emphasis {
+    color: #ffffff;
+}
+
 
 h1,
 h2,
@@ -33,6 +43,12 @@ p {
     font-weight: normal;
     margin: 0px;
     line-height: 1;
+}
+
+a {
+    color: inherit;
+    line-height: inherit;
+    text-decoration: none;
 }
 
 h2 {
@@ -57,7 +73,7 @@ h3 {
     left: 0px;
     width: 100%;
     height: 100%;
-    /* display: flex; */
+    display: flex;
     display: none;
     flex-direction: column;
 }
@@ -69,13 +85,13 @@ h3 {
 
 /* Header */
 header {
-    padding-top: 38px;
+    padding-top: 39px;
     display: flex;
     flex-direction: column;
     row-gap: 34px;
 }
 
-header div {
+header .logo {
     display: flex;
     align-items: center;
     column-gap: 7.5px;
@@ -112,7 +128,7 @@ nav span {
 /* Discover */
 #discover {
     padding-top: 20px;
-    margin-top: 73px;
+    margin-top: 72px;
 }
 
 #discover .pictures {
@@ -321,16 +337,33 @@ nav span {
     animation: blinker 1s linear infinite;
 }
 
-footer {
-    border-top: 2px solid #403C01;
-    padding: 39px 0px 51px;
-}
-
 @keyframes blinker {
     50% {
         opacity: 0;
     }
 }
+
+
+/* About Us */
+#about-us { 
+    padding-top: 20px;
+    margin-top: 62px;
+    margin-bottom: 100px;
+}
+
+#about-us p {
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.0150em;
+}
+
+/* Footer */
+footer {
+    border-top: 2px solid #403C01;
+    padding: 39px 0px 51px;
+}
+
+
 
 
 @media (min-width: 768.02px) {
@@ -363,7 +396,7 @@ footer {
         flex-direction: row;
     }
 
-    header div {
+    header .logo {
         flex-grow: 1;
         column-gap: 10px;
     }
@@ -446,6 +479,7 @@ footer {
         width: calc(5/12*(100% - 220px) + 80px);
     }
 
+    /* Contact */
     #contact {
         padding-top: 40px;
         margin-top: 180px;
@@ -462,6 +496,21 @@ footer {
         margin-top: -45px;
     }
 
+    /* About Us */
+    #about-us {
+        padding-top: 40px;
+        margin-top: 96px;
+        margin-bottom: 120px;
+    }
+
+    #about-us p {
+        font-size: 63px;
+        line-height: 70px;
+        letter-spacing: -0.03375em;
+    }
+
+
+    /* Footer */
     footer {
         padding: 34px 0px 48px
     }
@@ -472,6 +521,10 @@ footer {
 
     nav span:hover {
         color: #F2E205;
+    }
+
+    .yellow-theme nav span:hover {
+        color: white;
     }
 
     #products .cta:hover {
