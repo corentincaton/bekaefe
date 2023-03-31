@@ -6,6 +6,14 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'PP Mori';
+    src: url('fonts/PPMori-Medium.woff') format('woff2'),
+        url('fonts/PPMori-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 /* Global */
@@ -32,7 +40,6 @@ body {
     color: #ffffff;
 }
 
-
 h1,
 h2,
 h3,
@@ -43,6 +50,17 @@ p {
     font-weight: normal;
     margin: 0px;
     line-height: 1;
+}
+
+.yellow-theme h1,
+.yellow-theme h2,
+.yellow-theme h3,
+.yellow-theme h4,
+.yellow-theme h5,
+.yellow-theme a,
+.yellow-theme p,
+.yellow-theme span {
+    font-weight: 500;
 }
 
 a {
@@ -439,9 +457,9 @@ nav span {
 }
 
 #about-us p {
-    font-size: 28px;
-    line-height: 35px;
-    letter-spacing: -0.0150em;
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: -0.01125em;
 }
 
 /* Footer */
