@@ -468,9 +468,6 @@ footer {
     padding: 39px 0px 51px;
 }
 
-
-
-
 @media (min-width: 768.02px) {
 
     /* Global */
@@ -651,7 +648,7 @@ footer {
     }
 
     .yellow-theme nav span:hover {
-        color: white;
+        color: #ffffff;
     }
 
     #products .cta:hover {
