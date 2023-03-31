@@ -330,7 +330,7 @@ nav span {
 
 #products .tile {
     border-radius: 14px;
-    padding: 28px 40px 28px;
+    padding: 28px;
     display: flex;
     flex-direction: column;
     row-gap: 28px;
