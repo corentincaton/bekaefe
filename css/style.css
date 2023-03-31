@@ -578,7 +578,7 @@ footer {
     }
 
     #products .tile {
-        padding: 35px 40px 35px;
+        padding: 35px;
         width: calc(50% - 10px);
     }
 
