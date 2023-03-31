@@ -342,9 +342,9 @@ nav span {
 #products .tiles p {
     max-width: 400px;
     margin: 0px auto;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: -0.0075em;
+    font-size: 17.5px;
+    line-height: 24.5px;
+    letter-spacing: -0.009375em;
 }
 
 #products .materials {
