@@ -145,8 +145,8 @@ nav span {
     border-radius: 14px;
 }
 
-#discover .copyright {
-    margin-top: 43px;
+#discover .copy {
+    margin-top: 46px;
 }
 
 #discover .icon {
@@ -158,60 +158,6 @@ nav span {
     font-size: 28px;
     line-height: 35px;
     letter-spacing: -0.0150em;
-}
-
-@-webkit-keyframes rotating {
-    0% {
-        -webkit-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    50% {
-        -webkit-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotating {
-    0% {
-        -ms-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    50% {
-        -ms-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-
-    100% {
-        -ms-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-.rotating {
-    -webkit-animation: rotating 8s cubic-bezier(.65, 0, .35, 1) infinite;
-    -moz-animation: rotating 8s cubic-bezier(.65, 0, .35, 1) infinite;
-    -ms-animation: rotating 8s cubic-bezier(.65, 0, .35, 1) infinite;
-    -o-animation: rotating 8s cubic-bezier(.65, 0, .35, 1) infinite;
-    animation: rotating 8s cubic-bezier(.65, 0, .35, 1) infinite;
 }
 
 /* Products */
@@ -520,7 +466,7 @@ footer {
         width: calc(50% - 10px);
     }
 
-    #discover .copyright {
+    #discover .copy {
         margin-top: 52px;
     }
 
