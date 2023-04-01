@@ -145,7 +145,7 @@ nav span {
 }
 
 #discover .copy {
-    margin-top: 46px;
+    margin-top: 45px;
 }
 
 #discover .icon {
@@ -162,7 +162,7 @@ nav span {
 /* Products */
 #products {
     padding-top: 20px;
-    margin-top: 133px;
+    margin-top: 137px;
 }
 
 
@@ -373,8 +373,8 @@ nav span {
 /* About Us */
 #about-us {
     padding-top: 20px;
-    margin-top: 62px;
-    margin-bottom: 100px;
+    margin-top: 67px;
+    margin-bottom: 102px;
 }
 
 #about-us p {
@@ -466,7 +466,7 @@ footer {
     }
 
     #discover .copy {
-        margin-top: 52px;
+        margin-top: 48px;
     }
 
     #discover .icon {
