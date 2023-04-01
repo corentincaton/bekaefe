@@ -6,14 +6,6 @@
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: 'PP Mori';
-    src: url('fonts/PPMori-Medium.woff') format('woff2'),
-        url('fonts/PPMori-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
 
 
 /* Global */
@@ -31,13 +23,8 @@ body {
     color: #F2E205;
 }
 
-.yellow-theme {
-    background-color: #F2E205;
-    color: #0D0D0D;
-}
-
-.yellow-theme .emphasis {
-    color: #ffffff;
+.green-theme {
+    background-color: #403C01;
 }
 
 h1,
@@ -50,17 +37,6 @@ p {
     font-weight: normal;
     margin: 0px;
     line-height: 1;
-}
-
-.yellow-theme h1,
-.yellow-theme h2,
-.yellow-theme h3,
-.yellow-theme h4,
-.yellow-theme h5,
-.yellow-theme a,
-.yellow-theme p,
-.yellow-theme span {
-    font-weight: 500;
 }
 
 a {
@@ -99,12 +75,12 @@ h4 {
     width: 100%;
     height: 100%;
     display: flex;
-    display: none;
+    /* display: none; */
     flex-direction: column;
 }
 
 .grid .line {
-    padding-top: 27px;
+    padding-top: 13px;
     border-bottom: 1px solid blue;
 }
 
@@ -180,7 +156,7 @@ nav span {
 
 #discover p {
     font-size: 28px;
-    line-height: 42px;
+    line-height: 35px;
     letter-spacing: -0.0150em;
 }
 
@@ -424,7 +400,7 @@ nav span {
 #contact {
     padding-top: 20px;
     margin-top: 132px;
-    margin-bottom: 102px;
+    margin-bottom: 103px;
 
 }
 
@@ -464,7 +440,7 @@ nav span {
 
 /* Footer */
 footer {
-    border-top: 2px solid #403C01;
+    border-top: 2px solid #ffffff;
     padding: 39px 0px 51px;
 }
 
@@ -545,7 +521,7 @@ footer {
     }
 
     #discover .copyright {
-        margin-top: 48px;
+        margin-top: 52px;
     }
 
     #discover .icon {
@@ -555,14 +531,14 @@ footer {
 
     #discover p {
         font-size: 42px;
-        line-height: 56px;
+        line-height: 49px;
         letter-spacing: -0.0225em;
     }
 
     /* Products */
     #products {
         padding-top: 40px;
-        margin-top: 192px;
+        margin-top: 195px;
     }
 
     #products .split-columns:first-of-type {
@@ -645,10 +621,6 @@ footer {
 
     nav span:hover {
         color: #F2E205;
-    }
-
-    .yellow-theme nav span:hover {
-        color: #ffffff;
     }
 
     #products .cta:hover {
