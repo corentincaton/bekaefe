@@ -25,10 +25,6 @@ body {
     color: #F2E205;
 }
 
-.green-theme {
-    background-color: #403C01;
-}
-
 h1,
 h2,
 h3,
@@ -40,51 +36,6 @@ p {
     margin: 0px;
     line-height: 1;
 }
-
-a {
-    color: inherit;
-    line-height: inherit;
-    text-decoration: none;
-}
-
-h2 {
-    font-size: 56px;
-    text-transform: uppercase;
-    line-height: 56px;
-    letter-spacing: -0.03em;
-
-}
-
-h3 {
-    font-size: 35px;
-    text-transform: uppercase;
-    line-height: 35px;
-    letter-spacing: -0.01875em;
-}
-
-h4 {
-    font-size: 35px;
-    text-transform: uppercase;
-    line-height: 35px;
-    letter-spacing: -0.01875em;
-}
-
-/* Grid */
-.grid {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    display: none;
-    flex-direction: column;
-}
-
-.grid .line {
-    padding-top: 13px;
-    border-bottom: 1px solid blue;
-}
-
 
 h1 {
     font-size: 42px;
